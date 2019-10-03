@@ -1,0 +1,74 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    position: relative;
+    max-width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.377);
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0 , 0, 0,.2 )
+}
+.logo{
+    color: #069370;
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px; 
+    padding: 0 20px;
+
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 700;
+    text-decoration: none;
+}
+nav{
+    float: right;
+}
+.clearfix{
+    clear: both;
+}
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    position: sticky;
+
+}
+#menu {
+    position: sticky;
+    top: 0;
+   z-index: 1000;
+    padding: 8px;
+    background-image: url("https://static.wixstatic.com/media/4bcc0d_e9cb9e9e311443a9ab8b0af2a8da227e~mv2.png/v1/fill/w_300,h_300,al_c,q_80,usm_0.66_1.00_0.01/bomb-blast-png-3.webp")
+    color: #fff;
+    }
+nav ul li {
+list-style: none;
+}
+nav ul li a{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+nav ul li a#active,nav ul li a:hover{
+    background: #069370;
+    color: #fff;
+    transition: 0.5s;
+}
+a{
+    font-size: 25px;
+}
+.tempo{
+ position: relative;
+ width: 80px;
+ height: 80px;
+ left: 190px;
+ top:-65px;
+}
+

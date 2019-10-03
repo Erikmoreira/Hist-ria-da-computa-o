@@ -1,0 +1,62 @@
+.content{
+    width:960px;
+    margin:0 auto;
+}
+
+.contentFullFixed{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+header{
+    height:200px;
+    background:#f5f5f5;
+}
+#menu{
+    background:#f00;
+    height:30px;
+}
+article{
+    width:70%;
+    float:left;
+
+}
+#sidebar{
+    width:29%;
+    float:right;
+    margin-top:30px;
+}
+
+footer{
+    height:100px;
+    background: #333;
+}
+
+#main:before{
+    content: "";
+    height:1px;
+    display:block;
+     clear:both;
+}
+
+.clearfix{
+    clear:both;
+}
+
+.ads{
+    width:100%;
+    margin:0;
+    height:100px;
+    background:#00232c;
+    margin-bottom: 10px;
+}
+
+.headline{
+    background:#0066CC;
+}
+
+.featured{
+    background:#006505;
+}
