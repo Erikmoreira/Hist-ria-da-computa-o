@@ -1,13 +1,38 @@
-body{
+ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
 }
-header{
+
+body{
+    overflow-y: scroll;
+
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+    
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+ 
+
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(4, 32, 156);
+   
+}
+body::-webkit-scrollbar-thumb:hover{
+background-color:rgb(5, 4, 85)
+}
+body::-webkit-scrollbar-thumb:active{
+background-color:rgb(5, 3, 97);
+}
+aside{
     position: relative;
-    max-width: 100%;
+    width: 100%;
+    max-height: em;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.377);
+    background: rgb(0, 0, 0);
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0 , 0, 0,.2 )
@@ -43,7 +68,6 @@ nav ul {
     top: 0;
    z-index: 1000;
     padding: 8px;
-    background-image: url("https://static.wixstatic.com/media/4bcc0d_e9cb9e9e311443a9ab8b0af2a8da227e~mv2.png/v1/fill/w_300,h_300,al_c,q_80,usm_0.66_1.00_0.01/bomb-blast-png-3.webp")
     color: #fff;
     }
 nav ul li {
@@ -70,5 +94,86 @@ a{
  height: 80px;
  left: 190px;
  top:-65px;
-}
+} */
 
+
+
+a {
+    text-decoration: none;
+  }
+  
+  
+  
+  ul {
+    
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+  }
+  
+  li {
+      color: #fff;
+    
+      display: block;
+      float: left;
+      padding: 1rem;
+      position: relative;
+      text-decoration: none;
+    transition-duration: 0.5s;
+  }
+    
+  li a {
+    color: #fff;
+  }
+  
+  li:hover {
+      
+      cursor: pointer;
+  }
+  
+  ul li ul {
+    background: rgba(0, 0, 0, 0.932);
+      visibility: hidden;
+    opacity: 0;
+    min-width: 7rem;
+      position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+      left: 15px;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  
+  ul li ul li {
+      clear: both;
+    width: 90%;
+  }
+
+    .dropdown{
+        overflow-y: scroll;
+        height: 300px;
+        overflow-x: hidden;
+    }
+    .dropdown::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        border: 5px solid rgb(255, 255, 255);
+    
+    }
+    .dropdown::-webkit-scrollbar-thumb {
+        background-color: rgb(46, 180, 12);
+        
+    }
+.dropdown::-webkit-scrollbar-thumb:hover{
+    background-color:rgb(63, 143, 9)
+    }
+    .dropdown::-webkit-scrollbar-thumb:active{
+    background-color:rgb(15, 134, 11);
+    }
