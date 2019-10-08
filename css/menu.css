@@ -74,6 +74,7 @@ nav ul li {
 list-style: none;
 }
 nav ul li a{
+    
     display: block;
     margin: 10px 0;
     padding: 10px 20px;
@@ -83,6 +84,8 @@ nav ul li a{
 nav ul li a#active,nav ul li a:hover{
     background: #069370;
     color: #fff;
+    width: auto;
+    margin-right: 8px;
     transition: 0.5s;
 }
 a{
@@ -177,3 +180,8 @@ a {
     .dropdown::-webkit-scrollbar-thumb:active{
     background-color:rgb(15, 134, 11);
     }
+
+    .dropdown2{
+       width: 120px;
+    }
+    
