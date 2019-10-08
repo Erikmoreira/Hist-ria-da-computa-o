@@ -277,7 +277,7 @@
    
   }
   footer{
-    top: 100px;
+    margin-top: 1px;
     position: relative;
     background: rgb(0, 0, 0);
     height: 34em;
