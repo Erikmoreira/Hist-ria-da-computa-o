@@ -24,6 +24,8 @@
      
       <h2 class="timeline-header__title" id="linha">História da Computação</h2>
       <h3 class="timeline-header__subtitle">Linha do tempo</h3>
+      <br>
+      <div id="demo"></div>
     </div>
  
     <aside id="menu">
@@ -51,14 +53,43 @@
                 </ul>
             </li>
             <li><a href="#html" class="scroll">HTML</a></li>
-            <li><a href="#masaic" class="scroll">Mosaic</a></li>
-            <li><a href="#tcp" class="scroll">TCP IP</a></li>
-        </ul>
+            <li><a href="#tcp" class="scroll">TCP IP</a>
+              <ul class="dropdown">
+                  <li><a href="#masaic" class="scroll">Mosaic</a></li>
+                  <li><a href="#enac" class="scroll">Enac</a></li>
+                  <li><a href="#edvac" class="scroll">Edvac</a></li>
+                  <li><a href="#ibm7030" class="scroll">IBM 7030</a></li>
+                  <li><a href="#ibm1620" class="scroll">IBM 1620</a></li>
+                  <li><a href="#altair" class="scroll">Altair 8800</a></li>
+                  <li><a href="#macintosh" class="scroll">Macintosh</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="scroll"> Sistemas Operacionais</a>
+            <ul class="dropdown">
+                <li><a href="#colossus" class="scroll">UNIX</a></li>
+                <li><a href="#enac" class="scroll">BSD</a></li>
+                <li><a href="#edvac" class="scroll">Apple DOS</a></li>
+                <li><a href="#ibm7030" class="scroll">Windows 1.0</a></li>
+                <li><a href="#ibm1620" class="scroll">RISC/os</a></li>
+                <li><a href="#altair" class="scroll">Linux</a></li>
+                <li><a href="#macintosh" class="scroll">Debian</a></li>
+              </ul>
+        </ul></li>
       </nav>
       <div class="clearfix"></div>
         </div>
     </aside>
     <div class="timeline">
+        <div class="timeline-item" data-text="Inicio" >
+            <div class="timeline__content"><img class="timeline__img" src="https://cdn.dribbble.com/users/806986/screenshots/2264664/microsoft-logo-morph.gif"  />
+              <h2 class="timeline__content-title"></h2>
+              <p class="timeline__content-desc">
+                
+                </p>
+    
+            </div>
+          </div>
+
       <div class="timeline-item" data-text="Abáco o primeiro instrumento de calculos" >
         <div class="timeline__content"><img class="timeline__img" src="abaco.jpg" id="ab" />
           <h2 class="timeline__content-title">5500 a.c</h2>
@@ -126,9 +157,9 @@
               a máquina de Pascal.</p>
 
             <br>
-            <input type="button" id="bexemplo2" class="btn1 btn-gree" value="Mostrar" onclick="aparecer('exemplo2');">
+            <input type="button" id="bexemplo3" class="btn1 btn-gree" value="Mostrar" onclick="aparecer('exemplo3');">
             <br> <br>
-            <p id="exemplo2" style="display: none; color: #ffffffb3;font-family: 'Roboto Condensed', sans-serif;">Seu funcionamento era baseado no uso de rodas interligadas, que giravam na realização dos cálculos. A ideia inicial
+            <p id="exemplo3" style="display: none; color: #ffffffb3;font-family: 'Roboto Condensed', sans-serif;">Seu funcionamento era baseado no uso de rodas interligadas, que giravam na realização dos cálculos. A ideia inicial
               de Pascal era desenvolver uma máquina que realizasse as quatro operações matemáticas básicas, o que não
               aconteceu na prática, pois ela era capaz apenas de somar e subtrair. Por esse motivo, ela não foi muito bem acolhida
               na época.
@@ -154,9 +185,9 @@
             </p>
             <br>
 
-            <input type="button" id="bexemplo3" class="btn1 btn-gree" value="Mostrar"
-              onclick="aparecer('exemplo3');"><br> <br>
-            <p id="exemplo3" style="display: none; color: #ffffffb3;">
+            <input type="button" id="bexemplo4" class="btn1 btn-gree" value="Mostrar"
+              onclick="aparecer('exemplo4');"><br> <br>
+            <p id="exemplo4" style="display: none; color: #ffffffb3;">
               Após um período, no ano de 1837, Babbage lançou uma nova
               máquina, chamado de Engenho Analítico (Máquina Analítica). Ela
               aproveitava todos os conceitos do Tear Programável, como o uso dos
@@ -188,9 +219,9 @@
              </p>
 
             <br>
-            <input type="button" id="bexemplo4" class="btn1 btn-gree" value="Mostrar"
-              onclick="aparecer('exemplo4');"><br> <br>
-            <p id="exemplo4" style="display: none; color: #ffffffb3;font-family: 'Roboto Condensed', sans-serif;">
+            <input type="button" id="bexemplo5" class="btn1 btn-gree" value="Mostrar"
+              onclick="aparecer('exemplo5');"><br> <br>
+            <p id="exemplo5" style="display: none; color: #ffffffb3;font-family: 'Roboto Condensed', sans-serif;">
               Alan Turing trabalhou como funcionário do Governmente Code and Cypher School e entre 1940 e 1941, e desenvolveu uma máquina capaz de decifrar o “Enigma”, código utilizado pelos nazistas, durante a Segunda Guerra Mundial, dando assim aos aliados uma vantagem que permitiu derrotar mais depressa a Alemanha.
               
               Depois da guerra, trabalhou no Laboratório Nacional de Física do Reino Unido onde pesquisou e trabalhou no projeto para o programa de armazenamento de dados, o ACE. Criou o Manchester 1, o primeiro computador com as diretrizes parecidas com as de hoje. Interessou-se também por química, quando passou um período trabalhando nos laboratórios da Bell, nos Estados Unidos.
@@ -209,9 +240,9 @@
             <h2 class="timeline__content-title">1946</h2>
             <p class="timeline__content-desc">Colossus era um conjunto de computadores desenvolvidos por decifradores britânicos nos anos de 1943 a 1945 para ajudar na análise criptográfica da cifra de Lorenz . O Colossus usou válvulas termiônicas (tubos de vácuo) para realizar operações booleanas e de contagem. O Colossus é considerado  como o primeiro computador digital programável , eletrônico e digital do mundo , embora tenha sido programado por interruptores e plugues e não por um programa armazenado .</p>
             <br>
-            <input type="button" id="bexemplo5" class="btn1 btn-gree" value="Mostrar"
-              onclick="aparecer('exemplo5');"><br> <br>
-            <p id="exemplo5" style="display: none; color: #ffffffb3;font-family: 'Roboto Condensed', sans-serif;">
+            <input type="button" id="bexemplo6" class="btn1 btn-gree" value="Mostrar"
+              onclick="aparecer('exemplo6');"><br> <br>
+            <p id="exemplo6" style="display: none; color: #ffffffb3;font-family: 'Roboto Condensed', sans-serif;">
               O Colossus foi projetado pelo engenheiro de telefone Tommy Flowers para solucionar um problema colocado pelo matemático Max Newman na Escola de Código e Cifra do Governo (GC&CS) em Bletchley Park . O uso da probabilidade de Alan Turing na análise criptográfica (veja Banburismus ) contribuiu para seu projeto. Algumas vezes foi erroneamente declarado que Turing projetou Colossus para auxiliar na análise criptográfica do Enigma . A máquina de Turing que ajudou a decodificar Enigma era a bomba eletromecânica , não Colossus
             </p>
 
@@ -226,8 +257,8 @@
               representaria aproximadamente US$ 6 milhões e a máquina contava com um hardware com 70 mil resístores e 18
               mil válvulas de vácuo que em funcionamento consumiam vorazmente 200 mil watts de energia.</p>
             <br>
-            <input type="button" id="bexemplo6" class="btn1 btn-gree" value="Mostrar"
-              onclick="aparecer('exemplo6');"><br> <br>
+            <input type="button" id="bexemplo0" class="btn1 btn-gree" value="Mostrar"
+              onclick="aparecer('exemplo0');"><br> <br>
             <p id="exemplo6" style="display: none; color: #ffffffb3;font-family: 'Roboto Condensed', sans-serif;"> Já
               seu “sistema operacional” eram cartões perfurados que eram operados por um time de funcionárias do
               exército – o que de quebra as classifica como as primeiras programadoras que se tem notícia. Sua
@@ -293,6 +324,46 @@ IBM
             </p>
           </div>
         </div>
+
+        <div class="timeline-item" data-text="sistemas operacionais" id="UNIX">
+            <div class="timeline__content"><img class="timeline__img"
+                src="https://cdn.educba.com/academy/wp-content/uploads/2018/08/UNIX-interview-questions.jpg" />
+              <h2 class="timeline__content-title">1969</h2>
+              <p class="timeline__content-desc">Na década de 1960, uma equipe de desenvolvedores da AT&T Bell Labs resolveu trabalhar em um software mais objetivo e simplificado do que aquele que era utilizado nos mainframes da época. Após alguns anos, mais precisamente em 1969, o resultado foi o sistema operacional proprietário apelidado de UNIX (Serviço de Computação e Informação Uniplexada).</p>
+              <br>
+              <input type="button" id="bexemplo20" class="btn1 btn-gree" value="Mostrar"
+                onclick="aparecer('exemplo20');"><br> <br>
+              <p id="exemplo20" style="display: none; color: #ffffffb3;font-family: 'Roboto Condensed', sans-serif;">
+                  De início, o sistema foi programado especificamente para um tipo de máquina, mas, em 1973, o software foi recodificado para a linguagem C. Apesar de se tratar de um software com código fechado, a AT&T forneceu cópias para universidades.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-text="Protocol TCP IP"  >
+              <div class="timeline__content"id="tcp"><img class="timeline__img" src="https://www.microgenios.com.br/wp-content/uploads/2015/01/banner_introducao_a_tecnologia_tcp.png" />
+                <h2 class="timeline__content-title">1969</h2>
+                <p class="timeline__content-desc">Segue texto com a História do protocolo
+                  O TCP/IP foi desenvolvido em 1969 pelo U.S. Departament of Defense Advanced Research Projects Agency, como um recurso para um projeto experimental chamado de ARPANET (Advanced Research Project Agency Network) para preencher a necessidade de comunicação entre um grande número de sistemas de computadores e várias organizações militares dispersas. O objetivo do projeto era disponibilizar links (vínculos) de comunicação com alta velocidade, utilizando redes de comutação de pacotes. O protocolo deveria ser capaz de identificar e encontrar a melhor rota possível entre dois sites (locais), além de ser capaz de procurar rotas alternativas para chegar ao destino, caso qualquer uma das rotas tivesse sido destruída. O objetivo principal da elaboração de TCP/IP foi na época, encontrar um protocolo que pudesse tentar de todas as formas uma comunicação caso ocorresse uma guerra nuclear. A partir de 1972 o projeto ARPANET começou a crescer em uma comunidade internacional e hoje se transformou no que conhecemos como Internet. Em 1983 ficou definido que todos os computadores conectados ao ARPANET passariam a utilizar o TCP/IP. No final dos anos 1980 a Fundação Nacional de Ciências em Washington, D.C, começou a construir o NSFNET, um backbone para um supercomputador que serviria para interconectar diferentes comunidades de pesquisa e também os computadores da ARPANET. Em 1990 o NSFNET se tornou o backbone das redes para a Internet, padronizando definitivamente o TCP/IP.
+                  
+                  O TCP/IP sempre foi considerado um protocolo bastante pesado, exigindo muita memória e hardware para ser utilizado. Com o desenvolvimento das interfaces gráficas, com a evolução dos processadores e com o esforço dos desenvolvedores de sistemas operacionais em oferecer o TCP/IP para as suas plataformas com performance igual ou às vezes superior aos outros protocolos, o TCP/IP se tornou um protocolo indispensável. Hoje ele é tido como “The Master of the Network” (O Mestre das Redes),pois a maioria das LANs exige a sua utilização para acesso ao mundo externo.
+                  
+              </p>
+      
+                <br>
+                <input type="button" id="bexemplo12" class="btn1 btn-gree" value="Mostrar" onclick="aparecer('exemplo12');">
+                <br> <br>
+                <p id="exemplo12" style="display: none; color: #ffffffb3;font-family: 'Roboto Condensed', sans-serif;">   O TCP/IP oferece diversos benefícios, dentre eles:
+                  Padronização: um padrão, um protocolo roteável que é o mais completo e aceito protocolo disponível atualmente. Todos os sistemas operacionais modernos oferecem suporte para o TCP/IP e a maioria das grandes redes se baseia em TCP/IP para a maior parte de seu tráfego.
+                  Interconectividade: uma tecnologia para conectar sistemas não similares. Muitos utilitários padrões de conectividade estão disponíveis para acessar e transferir dados entre esses sistemas não similares, incluindo FTP (File Transfer Protocol) e Telnet (Terminal Emulation Protocol).
+                  Roteamento: permite e habilita as tecnologias mais antigas e as novas a se conectarem à Internet. Trabalha com protocolos de linha como PPP (Point to Point Protocol) permitindo conexão remota a partir de linha discada ou dedicada. Trabalha como os mecanismos IPCs e interfaces mais utilizados pelos sistemas operacionais, como Windows sockets e NetBIOS.
+                  Protocolo Robusto: escalável, multiplataforma, com estrutura para ser utilizada em sistemas operacionais cliente/servidor, permitindo a utilização de aplicações desse porte entre dois pontos distantes.
+                  Internet: é através da suíte de protocolos TCP/IP que obtemos acesso a Internet. As redes locais distribuem servidores de acesso a Internet (proxy servers) e os hosts locais se conectam a estes servidores para obter o acesso a Internet. Este acesso só pode ser conseguido se os computadores estiverem configurados para utilizar TCP/IP.
+                  
+                  As abrangências para a automação residencial são inúmeras. Proporcionando um sistema mais versátil de acordo com o perfil do cliente. É a internet das coisas de fato, sendo levada para a automação residencial. O sistema da WOW não necessita de um gateway de automação para realizar a comunicação. Todos os produtos já são inteligentes sem necessitar uma central de automação.
+                </p>
+              </div>
+            </div>
+
         <div class="timeline-item" data-text="IBM 1620" id="ibm1620">
           <div class="timeline__content"><img class="timeline__img"
               src="data:image/jpeg;base64,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" />
@@ -345,9 +416,9 @@ IBM
             </p>
             <br>
 
-            <input type="button" id="bexemplo3" class="btn1 btn-gree" value="Mostrar"
-              onclick="aparecer('exemplo3');"><br> <br>
-            <p id="exemplo3" style="display: none; color: #ffffffb3;">
+            <input type="button" id="bexemplo11" class="btn1 btn-gree" value="Mostrar"
+              onclick="aparecer('exemplo11');"><br> <br>
+            <p id="exemplo11" style="display: none; color: #ffffffb3;">
               Seguindo na mesma linha, com os computadores Lisa (1983) e
               Macintosh(1984), foram os primeiros a usarem o Mouse e possuírem a
               interface gráfica como nós conhecemos hoje em dia, com pastas, menus
@@ -356,31 +427,55 @@ IBM
             </p>
           </div>
         </div>
-        <div class="timeline-item" data-text="Protocol TCP IP"  >
-            <div class="timeline__content"id="tcp"><img class="timeline__img" src="https://www.microgenios.com.br/wp-content/uploads/2015/01/banner_introducao_a_tecnologia_tcp.png" />
-              <h2 class="timeline__content-title">1969</h2>
-              <p class="timeline__content-desc">Segue texto com a História do protocolo
-                O TCP/IP foi desenvolvido em 1969 pelo U.S. Departament of Defense Advanced Research Projects Agency, como um recurso para um projeto experimental chamado de ARPANET (Advanced Research Project Agency Network) para preencher a necessidade de comunicação entre um grande número de sistemas de computadores e várias organizações militares dispersas. O objetivo do projeto era disponibilizar links (vínculos) de comunicação com alta velocidade, utilizando redes de comutação de pacotes. O protocolo deveria ser capaz de identificar e encontrar a melhor rota possível entre dois sites (locais), além de ser capaz de procurar rotas alternativas para chegar ao destino, caso qualquer uma das rotas tivesse sido destruída. O objetivo principal da elaboração de TCP/IP foi na época, encontrar um protocolo que pudesse tentar de todas as formas uma comunicação caso ocorresse uma guerra nuclear. A partir de 1972 o projeto ARPANET começou a crescer em uma comunidade internacional e hoje se transformou no que conhecemos como Internet. Em 1983 ficou definido que todos os computadores conectados ao ARPANET passariam a utilizar o TCP/IP. No final dos anos 1980 a Fundação Nacional de Ciências em Washington, D.C, começou a construir o NSFNET, um backbone para um supercomputador que serviria para interconectar diferentes comunidades de pesquisa e também os computadores da ARPANET. Em 1990 o NSFNET se tornou o backbone das redes para a Internet, padronizando definitivamente o TCP/IP.
-                
-                O TCP/IP sempre foi considerado um protocolo bastante pesado, exigindo muita memória e hardware para ser utilizado. Com o desenvolvimento das interfaces gráficas, com a evolução dos processadores e com o esforço dos desenvolvedores de sistemas operacionais em oferecer o TCP/IP para as suas plataformas com performance igual ou às vezes superior aos outros protocolos, o TCP/IP se tornou um protocolo indispensável. Hoje ele é tido como “The Master of the Network” (O Mestre das Redes),pois a maioria das LANs exige a sua utilização para acesso ao mundo externo.
-                
+
+        <div class="timeline-item" data-text="Sistema Operacional"  >
+            <div class="timeline__content"id="tcp"><img class="timeline__img" src="https://3.bp.blogspot.com/-0f8eY9sH5KY/Wo-9pPkQCYI/AAAAAAAAnQE/C0bl60yqglUx6L-zsNF4Q-lt6NG-0-G3ACLcBGAs/s1600/bsd%2Bmorrendo.jpg" />
+              <h2 class="timeline__content-title">1977</h2>
+              <p class="timeline__content-desc">
+                  Em 1977, o UNIX teve seu primeiro descendente. Ainda que tivesse características próprias, o BSD estava claramente ligado com seu antecessor, visto que utilizava parte do código-fonte e do design do sistema que foi criado pela AT&T. De início, o sistema era apenas uma extensão do UNIX e agregava algumas poucas funcionalidades.
             </p>
     
               <br>
-              <input type="button" id="bexemplo2" class="btn1 btn-gree" value="Mostrar" onclick="aparecer('exemplo2');">
+              <input type="button" id="bexemplo21" class="btn1 btn-gree" value="Mostrar" onclick="aparecer('exemplo21');">
               <br> <br>
-              <p id="exemplo2" style="display: none; color: #ffffffb3;font-family: 'Roboto Condensed', sans-serif;">   O TCP/IP oferece diversos benefícios, dentre eles:
-                Padronização: um padrão, um protocolo roteável que é o mais completo e aceito protocolo disponível atualmente. Todos os sistemas operacionais modernos oferecem suporte para o TCP/IP e a maioria das grandes redes se baseia em TCP/IP para a maior parte de seu tráfego.
-                Interconectividade: uma tecnologia para conectar sistemas não similares. Muitos utilitários padrões de conectividade estão disponíveis para acessar e transferir dados entre esses sistemas não similares, incluindo FTP (File Transfer Protocol) e Telnet (Terminal Emulation Protocol).
-                Roteamento: permite e habilita as tecnologias mais antigas e as novas a se conectarem à Internet. Trabalha com protocolos de linha como PPP (Point to Point Protocol) permitindo conexão remota a partir de linha discada ou dedicada. Trabalha como os mecanismos IPCs e interfaces mais utilizados pelos sistemas operacionais, como Windows sockets e NetBIOS.
-                Protocolo Robusto: escalável, multiplataforma, com estrutura para ser utilizada em sistemas operacionais cliente/servidor, permitindo a utilização de aplicações desse porte entre dois pontos distantes.
-                Internet: é através da suíte de protocolos TCP/IP que obtemos acesso a Internet. As redes locais distribuem servidores de acesso a Internet (proxy servers) e os hosts locais se conectam a estes servidores para obter o acesso a Internet. Este acesso só pode ser conseguido se os computadores estiverem configurados para utilizar TCP/IP.
-                
-                As abrangências para a automação residencial são inúmeras. Proporcionando um sistema mais versátil de acordo com o perfil do cliente. É a internet das coisas de fato, sendo levada para a automação residencial. O sistema da WOW não necessita de um gateway de automação para realizar a comunicação. Todos os produtos já são inteligentes sem necessitar uma central de automação.
+              <p id="exemplo21" style="display: none; color: #ffffffb3;font-family: 'Roboto Condensed', sans-serif;"> Assim como seu “pai”, o BSD também adotou a ideia do código fechado (algo que foi mudado décadas depois), mas isso não era exatamente um problema, visto que ele era voltado para o uso em universidade e máquinas de grande porte.
               </p>
             </div>
           </div>
+        
+        <div class="timeline-item" data-text="Sistema Operacional"  >
+            <div class="timeline__content"id="tcp"><img class="timeline__img" src="data:image/jpeg;base64,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" />
+              <h2 class="timeline__content-title">1980</h2>
+              <p class="timeline__content-desc">
+                  Com o sucesso de vendas do Apple II, a fabricante, naturalmente, resolveu apostar no Apple III e, consequentemente, necessitou de um sistema evoluído para conquistar o consumidor. Na época, a Maçã optou por um sistema um pouco diferente do antecessor, mas as mudanças não foram tão significativas.
+            </p>
     
+            
+            </div>
+          </div>
+
+    <div class="timeline-item" data-text="Sistema Operacional"  >
+              <div class="timeline__content"id="tcp"><img class="timeline__img" src="https://img.olhardigital.com.br/uploads/acervo_imagens/2019/07/r16x9/20190702093750_1200_675_-_windows_1.0.jpg" />
+                <h2 class="timeline__content-title">1977</h2>
+                <p class="timeline__content-desc">
+                    Correndo atrás do prejuízo, a Microsoft lançou seu primeiro sistema com interface gráfica e suporte para múltiplas tarefas. O software da MS copiou algumas coisas do Macintosh, mas ele era bem diferente em diversos aspectos. Este sistema rodava sobre o MS-DOS, mas já trazia alguns drivers avançados para melhorar a usabilidade.
+              </p>
+      
+                
+              </div>
+            </div>
+            
+            <div class="timeline-item" data-text="RISC/os"  >
+                <div class="timeline__content"id="tcp"><img class="timeline__img" src="https://rakanalysis.files.wordpress.com/2013/04/screen_20121126_1s.png" />
+                  <h2 class="timeline__content-title">1977</h2>
+                  <p class="timeline__content-desc">
+                      Após diversos sistemas baseados no Unix, alguns começaram a misturar elementos do código-base com os de outros softwares. O RISC/os, por exemplo, trazia elementos do BSD e algumas características do UNIX. Este foi um dos primeiros sistemas com arquitetura de 64 bits, mas ele não deu muito certo e logo foi descontinuado.
+                </p>
+        
+                  
+                </div>
+              </div>
+              
           <div id="html" class="timeline-item" data-text="HTML 5"  >
             <div class="timeline__content"><img class="timeline__img" src="data:image/png;base64,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" id="sis"/>
               <h2 class="timeline__content-title" style="font-size: 50px"> 1991</h2>
@@ -397,87 +492,147 @@ IBM
               </p>
             </div>
           </div>
+          <div class="timeline-item" data-text="Linux"  >
+            <div class="timeline__content"id="tcp"><img class="timeline__img" src="https://media1.tenor.com/images/49f845b5c93a099c5f4459a66709027d/tenor.gif?itemid=13909136" />
+              <h2 class="timeline__content-title">1977</h2>
+              <p class="timeline__content-desc">
+                  Finalmente, depois de vinte e tantos anos de história, nasceu o Linux. Apesar de não ser o sistema preferido de muitos, o pinguim foi um dos mais importantes da história, visto que trazia código livre e aberto.
+
+                  De início, o sistema de Linus Torvalds aproveitou bibliotecas e aplicações do GNU. O curioso desse sistema é que ele não se popularizou como uma plataforma única. Desde o começo, Torvalds distribuiu o Kernel do sistema de forma gratuita, garantindo que diversos outros sistemas pudessem ser desenvolvidos e oferecer novas experiências para os usuários.
+            </p>
+    
+              
+            </div>
+          </div>
+          <div class="timeline-item" data-text="Debian"  >
+              <div class="timeline__content"id="tcp"><img class="timeline__img" src="data:image/png;base64,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" />
+                <h2 class="timeline__content-title">1977</h2>
+                <p class="timeline__content-desc">
+                    Dois anos depois do nascimento do Linux, surgiu um dos maiores sistemas de todos os tempos. O Debian chegou com os dois pés no peito das companhias gigantes mostrando tudo que o Pinguim tinha a oferecer. O sistema da Debian Project reunia o Kernel do Linux (uma adaptação de uma versão prévia conhecida com SLS) e as ferramentas do GNU.
+
+                    Um dos grandes destaques dele foi o apoio às mais diferentes arquiteturas. O Debian roda em x86, x64, PowerPC, SPARC, ARM, MIPS, S390 e IA-64. Devido à versatilidade, o sistema ganhou muitos descendentes, incluindo o Ubuntu. Atualmente, ele tem uma base gigante de dados e pode se adaptar facilmente a quaisquer necessidades. É um dos sistemas Linux mais usados.
+              </p>
+      
+                
+              </div>
+            </div>
+            <div class="timeline-item" data-text="Windows 8"  >
+                <div class="timeline__content"id="tcp"><img class="timeline__img" src="https://cdn.dribbble.com/users/806986/screenshots/2264664/microsoft-logo-morph.gif" />
+                  <h2 class="timeline__content-title">2012</h2>
+                  <p class="timeline__content-desc">
+                       Windows 8
+                      x86, x64, IA-32 e ARM
+                      Disponível
+                      Atualizações em desenvolvimento
+                      Código fechado
+                      Pensando em migrar para o setor dos tablets e revolucionar a forma como as pessoas usam os PCs, a Microsoft apostou em uma reformulação de seu sistema. Aproveitando elementos do Windows Phone, o novo Windows 8 trouxe um novo Menu Iniciar. Além disso, ele mantém a compatibilidade com os antigos programas e traz suporte para novos apps.
+                                      </p>
+        
+                  
+                </div>
+              </div>
 
           
-      </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script>
-
-      (function ($) {
-        $.fn.timeline = function () {
-          var selectors = {
-            id: $(this),
-            item: $(this).find(".timeline-item"),
-            activeClass: "timeline-item--active",
-            img: ".timeline__img"
-          };
-          selectors.item.eq(0).addClass(selectors.activeClass);
-          selectors.id.css(
-            "background-image",
-            "url(" +
-            selectors.item
-              .first()
-              .find(selectors.img)
-              .attr("src") +
-            ")"
-          );
-          var itemLength = selectors.item.length;
-          $(window).scroll(function () {
-            var max, min;
-            var pos = $(this).scrollTop();
-            selectors.item.each(function (i) {
-              min = $(this).offset().top;
-              max = $(this).height() + $(this).offset().top;
-              var that = $(this);
-              if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
-                selectors.item.removeClass(selectors.activeClass);
-                selectors.id.css(
-                  "background-image",
-                  "url(" +
-                  selectors.item
-                    .last()
-                    .find(selectors.img)
-                    .attr("src") +
-                  ")"
-                );
-                selectors.item.last().addClass(selectors.activeClass);
-              } else if (pos <= max - 40 && pos >= min) {
-                selectors.id.css(
-                  "background-image",
-                  "url(" +
-                  $(this)
-                    .find(selectors.img)
-                    .attr("src") +
-                  ")"
-                );
-                selectors.item.removeClass(selectors.activeClass);
-                $(this).addClass(selectors.activeClass);
-              }
-            });
-          });
-        };
-      })(jQuery);
-
-      $("#timeline-1").timeline();
-
-    </script>
-
-
-    <script>
-      function aparecer(novoid) {
-        console.log('')
-        if (document.getElementById(novoid).style.display == "none") {
-          document.getElementById(novoid).style.display = "block";
-          document.getElementById('b' + novoid).value = "Ocultar Conteudo";
-        } else if (document.getElementById(novoid).style.display == "block") {
-          document.getElementById(novoid).style.display = "none";
-          document.getElementById('b' + novoid).value = "Mostrar Conteudo";
-        }
-      }
-    </script>
-
+ </div>
+ </div>          
+    
+<footer>
+  <p id="foo">Criado por:
+   <h4> Erik Felipe da silva</h4>
+   <h4>Fernado secco </h4>
+      <h4>Vainer macena</h4>
+  </p>
+  <img src="https://web.whatsapp.com/pp?e=https%3A%2F%2Fpps.whatsapp.net%2Fv%2Ft61.24694-24%2F64488800_2489669947920147_5965120412005171200_n.jpg%3Foe%3D5D9FBE16%26oh%3D1dce9335a485d936f507223605a76a5f&t=l&u=555491856871%40c.us&i=1564260917" class="foto" >  <img src="https://web.whatsapp.com/pp?e=https%3A%2F%2Fpps.whatsapp.net%2Fv%2Ft61.24694-24%2F71150874_973182739695243_6849088388771872768_n.jpg%3Foe%3D5D9FC156%26oh%3D0077c30fe66f6025f07755576fc99154&t=l&u=555499407181%40c.us&i=1569796082" class="foto" >  <img src="https://web.whatsapp.com/pp?e=https%3A%2F%2Fpps.whatsapp.net%2Fv%2Ft61.24694-24%2F68821762_1597349263734936_3095305229973848064_n.jpg%3Foe%3D5D9FC157%26oh%3D204917d0ea96ceab8aa6ccc8c0d49eff&t=l&u=555491361430%40c.us&i=1567909661" class="foto" >
+</footer>
+ 
+   
 
 </body>
 
 </html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+
+  (function ($) {
+    $.fn.timeline = function () {
+      var selectors = {
+        id: $(this),
+        item: $(this).find(".timeline-item"),
+        activeClass: "timeline-item--active",
+        img: ".timeline__img"
+      };
+      selectors.item.eq(0).addClass(selectors.activeClass);
+      selectors.id.css(
+        "background-image",
+        "url(" +
+        selectors.item
+          .first()
+          .find(selectors.img)
+          .attr("src") +
+        ")"
+      );
+      var itemLength = selectors.item.length;
+      $(window).scroll(function () {
+        var max, min;
+        var pos = $(this).scrollTop();
+        selectors.item.each(function (i) {
+          min = $(this).offset().top;
+          max = $(this).height() + $(this).offset().top;
+          var that = $(this);
+          if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+            selectors.item.removeClass(selectors.activeClass);
+            selectors.id.css(
+              "background-image",
+              "url(" +
+              selectors.item
+                .last()
+                .find(selectors.img)
+                .attr("src") +
+              ")"
+            );
+            selectors.item.last().addClass(selectors.activeClass);
+          } else if (pos <= max - 40 && pos >= min) {
+            selectors.id.css(
+              "background-image",
+              "url(" +
+              $(this)
+                .find(selectors.img)
+                .attr("src") +
+              ")"
+            );
+            selectors.item.removeClass(selectors.activeClass);
+            $(this).addClass(selectors.activeClass);
+          }
+        });
+      });
+    };
+  })(jQuery);
+
+  $("#timeline-1").timeline();
+
+</script>
+
+
+<script>
+var myVar = setInterval(myTimer ,1000);
+
+function myTimer() {
+var d = new Date(), displayDate;  
+displayDate = d.toLocaleTimeString('pt-BR');
+document.getElementById("demo").innerHTML = displayDate;
+}
+
+
+  function aparecer(novoid) {
+    console.log('')
+    if (document.getElementById(novoid).style.display == "none") {
+      document.getElementById(novoid).style.display = "block";
+      document.getElementById('b' + novoid).value = "Ocultar Conteudo";
+    } else if (document.getElementById(novoid).style.display == "block") {
+      document.getElementById(novoid).style.display = "none";
+      document.getElementById('b' + novoid).value = "Mostrar Conteudo";
+    }
+  }
+</script>
+
